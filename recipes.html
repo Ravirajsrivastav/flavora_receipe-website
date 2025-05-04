@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Flavora | Explore Delicious Dishes</title>
+    <meta name="description" content="Browse our collection of delicious recipes. Filter by cuisine, cooking time, and dietary preferences to find your perfect meal.">
+    <meta name="keywords" content="recipes, cooking, food, cuisine types, meal ideas, dinner recipes, quick meals, healthy cooking">
+    <meta name="author" content="Raviraj Srivastav">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ravirajsrivastav.github.io/-flavora-recipe-website-/recipes.html">
+    <meta property="og:title" content="Recipes - Flavora | Explore Delicious Dishes">
+    <meta property="og:description" content="Browse our collection of delicious recipes. Filter by cuisine, cooking time, and dietary preferences to find your perfect meal.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=1200">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ravirajsrivastav.github.io/-flavora-recipe-website-/recipes.html">
+    <meta name="twitter:title" content="Recipes - Flavora | Explore Delicious Dishes">
+    <meta name="twitter:description" content="Browse our collection of delicious recipes. Filter by cuisine, cooking time, and dietary preferences to find your perfect meal.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=1200">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/flavora-logo.png.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ravirajsrivastav.github.io/-flavora-recipe-website-/recipes.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fas fa-utensils"></i>
+            Flavora
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="active">
+                <i class="fas fa-book-open"></i>
+                <span>Recipes</span>
+            </a>
+            <a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+            <a href="about.html">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for delicious recipes...">
+                <button class="voice-search" title="Search with voice">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="recipes-main">
+        <div class="filters-section">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Cuisine</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="indian"> Indian</label>
+                    <label><input type="checkbox" value="italian"> Italian</label>
+                    <label><input type="checkbox" value="chinese"> Chinese</label>
+                    <label><input type="checkbox" value="mexican"> Mexican</label>
+                    <label><input type="checkbox" value="japanese"> Japanese</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h3>Meal Type</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="breakfast"> Breakfast</label>
+                    <label><input type="checkbox" value="lunch"> Lunch</label>
+                    <label><input type="checkbox" value="dinner"> Dinner</label>
+                    <label><input type="checkbox" value="snacks"> Snacks</label>
+                    <label><input type="checkbox" value="dessert"> Dessert</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h3>Cooking Time</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="quick"> Under 30 mins</label>
+                    <label><input type="checkbox" value="medium"> 30-60 mins</label>
+                    <label><input type="checkbox" value="long"> Over 60 mins</label>
+                </div>
+            </div>
+            <button class="apply-filters">Apply Filters</button>
+        </div>
+
+        <div class="recipes-grid">
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800" alt="Creamy Garlic Pasta">
+                    <div class="recipe-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">30 min</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Creamy Garlic Pasta</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 30 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 4 servings</span>
+                        <span><i class="fas fa-fire"></i> 450 cal</span>
+                    </div>
+                    <p>A delicious pasta dish with creamy garlic sauce, fresh herbs, and parmesan cheese. Perfect for a cozy dinner.</p>
+                    <div class="recipe-actions">
+                        <button class="save-recipe">
+                            <i class="far fa-bookmark"></i>
+                            Save
+                        </button>
+                        <button class="view-recipe">View Recipe</button>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">dinner</span>
+                        <span class="tag">medium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=800" alt="Butter Chicken">
+                    <div class="recipe-tags">
+                        <span class="tag">Indian</span>
+                        <span class="tag">45 min</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Butter Chicken</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 45 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 6 servings</span>
+                        <span><i class="fas fa-fire"></i> 520 cal</span>
+                    </div>
+                    <p>Classic Indian butter chicken with rich and creamy tomato gravy, tender chicken pieces, and aromatic spices.</p>
+                    <div class="recipe-actions">
+                        <button class="save-recipe">
+                            <i class="far fa-bookmark"></i>
+                            Save
+                        </button>
+                        <button class="view-recipe">View Recipe</button>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Indian</span>
+                        <span class="tag">dinner</span>
+                        <span class="tag">medium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800" alt="California Roll">
+                    <div class="recipe-tags">
+                        <span class="tag">Japanese</span>
+                        <span class="tag">60 min</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h3>California Roll</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 60 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 4 servings</span>
+                        <span><i class="fas fa-fire"></i> 350 cal</span>
+                    </div>
+                    <p>Fresh and delicious California rolls with avocado, crab meat, cucumber, and perfectly seasoned sushi rice.</p>
+                    <div class="recipe-actions">
+                        <button class="save-recipe">
+                            <i class="far fa-bookmark"></i>
+                            Save
+                        </button>
+                        <button class="view-recipe">View Recipe</button>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Japanese</span>
+                        <span class="tag">lunch</span>
+                        <span class="tag">long</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=800" alt="Margherita Pizza">
+                    <div class="recipe-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">40 min</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Classic Margherita Pizza</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 40 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 4 servings</span>
+                        <span><i class="fas fa-fire"></i> 480 cal</span>
+                    </div>
+                    <p>Traditional Neapolitan pizza with fresh mozzarella, basil leaves, tomato sauce, and extra virgin olive oil.</p>
+                    <div class="recipe-actions">
+                        <button class="save-recipe">
+                            <i class="far fa-bookmark"></i>
+                            Save
+                        </button>
+                        <button class="view-recipe">View Recipe</button>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">dinner</span>
+                        <span class="tag">medium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800" alt="Spicy Ramen">
+                    <div class="recipe-tags">
+                        <span class="tag">Japanese</span>
+                        <span class="tag">35 min</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Spicy Miso Ramen</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 35 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 2 servings</span>
+                        <span><i class="fas fa-fire"></i> 420 cal</span>
+                    </div>
+                    <p>Rich and flavorful ramen with spicy miso broth, tender chashu pork, soft-boiled egg, and fresh vegetables.</p>
+                    <div class="recipe-actions">
+                        <button class="save-recipe">
+                            <i class="far fa-bookmark"></i>
+                            Save
+                        </button>
+                        <button class="view-recipe">View Recipe</button>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Japanese</span>
+                        <span class="tag">dinner</span>
+                        <span class="tag">medium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=800" alt="Street Tacos">
+                    <div class="recipe-tags">
+                        <span class="tag">Mexican</span>
+                        <span class="tag">25 min</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Authentic Street Tacos</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 25 mins</span>
+                        <span><i class="fas fa-user-friends"></i> 4 servings</span>
+                        <span><i class="fas fa-fire"></i> 380 cal</span>
+                    </div>
+                    <p>Traditional Mexican street tacos with marinated meat, fresh cilantro, onions, and homemade salsa verde.</p>
+                    <div class="recipe-actions">
+                        <button class="save-recipe">
+                            <i class="far fa-bookmark"></i>
+                            Save
+                        </button>
+                        <button class="view-recipe">View Recipe</button>
+                    </div>
+                    <div class="recipe-tags">
+                        <span class="tag">Mexican</span>
+                        <span class="tag">dinner</span>
+                        <span class="tag">quick</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Flavora is your ultimate cooking companion, bringing delicious recipes and culinary inspiration right to your fingertips.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Flavora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="recipes.js"></script>
+</body>
+</html>

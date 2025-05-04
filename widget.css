@@ -1,0 +1,140 @@
+/* Floating Widget Styles */
+#floating-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* Popup iframe container */
+#popup-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 500px;
+  height: 600px;
+  background: #111;
+  border: 1px solid #d0e8da;
+  box-shadow: 0 0 20px #D75B59;
+  display: none;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+#popup-header {
+  background: #D75B59;
+  color: white;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popup-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#popup-frame {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Radar Loader Styles (from Uiverse.io by Valeron-T) */
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 7px #D75B59;
+  border: 1px solid #D75B59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  background: transparent;
+  border: 1px solid #D75B59;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 5px #D75B59;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #D75B59;
+  box-shadow: inset 0px 0px 3px #D75B59;
+}
+
+.loader span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform-origin: top left;
+  animation: radar81 2s linear infinite;
+  box-shadow: -25px -75px 30px -50px #D75B59;
+  border-top: 2px solid #D75B59;
+}
+
+@keyframes radar81 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255);
+  box-shadow: inset 0 0 10px 2px #666666,
+              0 0 10px 2px #666666;
+  animation: fly 32s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    top: var(--dot-start-top);
+    left: var(--dot-start-left);
+  }
+  100% {
+    top: var(--dot-end-top);
+    left: var(--dot-end-left);
+  }
+  5%,15%,25%,35%,45%,55%,65%,75%,85%,95% {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 10px 2px #666666,
+                0 0 15px 2px #666666;
+  }
+  0%,10%,20%,30%,40%,50%,60%,70%,80%,90% {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 10px 2px #666666,
+                0 0 5px 2px #666666;
+  }
+}
+
+/* Dot positions */
+#dot-1 { --dot-start-top: 60px; --dot-start-left: 70px; --dot-end-top: 80px; --dot-end-left: 10px; }
+#dot-2 { --dot-start-top: 60px; --dot-start-left: 0px; --dot-end-top: 0px; --dot-end-left: 45px; }
+#dot-3 { --dot-start-top: 60px; --dot-start-left: 50px; --dot-end-top: 10px; --dot-end-left: 10px; }
+#dot-4 { --dot-start-top: 60px; --dot-start-left: 80px; --dot-end-top: 70px; --dot-end-left: 15px; }
+#dot-5 { --dot-start-top: -5px; --dot-start-left: 40px; --dot-end-top: 70px; --dot-end-left: 60px; }
